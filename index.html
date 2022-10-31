@@ -10,14 +10,37 @@
 </head>
 <body>
     <div class="win">
-        <h1>EJERCICIO 1</h1><br>
+        <h1>EJERCICIO 2</h1><br>
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Código</th>
+            </tr>
+            <tr>
+                <td>Durazno</td>
+                <td>$ 3200</td>
+                <td>23548</td>
+            </tr>
+            <tr>
+                <td>Manzana</td>
+                <td>$ 2500</td>
+                <td>87845</td>
+            </tr>
+            <tr>
+                <td>Pera</td>
+                <td>$ 1700</td>
+                <td>54878</td>
+            </tr>
+        </table>
         <form id="myform" action="api.php" method="post">
-            <input type="number" name="dia" class="box" placeholder="Día de nacimiento" required><br>
-            <input type="number" name="mes" class="box" placeholder="Mes de nacimiento" required><br>
-            <input type="text" id="res" placeholder="Signo zodiacal" readonly>
+            <input type="number" name="cod" class="box" placeholder="Código del producto" required><br>
+            <input type="number" name="uni" class="box" placeholder="N° unidades" required><br>
+            <input type="text" id="res" placeholder="Total a pagar" readonly>
             <input type="submit" class="btn" id="calc" value="Calcular">
             <input type="submit" class="btn" id="reiniciar" value="Reiniciar">
         </form>
     </div>
+    <pre></pre>
 </body>
 </html>

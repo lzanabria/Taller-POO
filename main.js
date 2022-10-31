@@ -9,8 +9,9 @@ addEventListener("DOMContentLoaded", (e) => {
         };
         let peticion = await fetch(form.action, config);
         let respuesta = await peticion.json();
+        
         if(e.submitter.id == "calc") {
-            document.querySelector("#res").value = respuesta.signo_user;
+            document.querySelector("#res").value = `$ ${new Intl.NumberFormat("es-ES", {style: "currency", currency: "COP", minimumSignificantDigits: 1}).format(respuesta.total)}`;
         }
         else {
             form.reset();

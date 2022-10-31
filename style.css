@@ -63,4 +63,19 @@ input, .res {
     border: none;
     outline: none;
     width: -webkit-fill-available;
+}   
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 5px solid #292b36;
+    text-align: left;
+}
+
+th {
+    color: #5af78d;
+}
+
+tr, th, td {
+    border: 2.5px solid #292b36;
 }
