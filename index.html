@@ -10,37 +10,28 @@
 </head>
 <body>
     <div class="win">
-        <h1>EJERCICIO 2</h1><br>
-        <table>
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-                <th>Código</th>
-            </tr>
-            <tr>
-                <td>Durazno</td>
-                <td>$ 3200</td>
-                <td>23548</td>
-            </tr>
-            <tr>
-                <td>Manzana</td>
-                <td>$ 2500</td>
-                <td>87845</td>
-            </tr>
-            <tr>
-                <td>Pera</td>
-                <td>$ 1700</td>
-                <td>54878</td>
-            </tr>
-        </table>
+        <h1>EJERCICIO 3</h1><br>
         <form id="myform" action="api.php" method="post">
-            <input type="number" name="cod" class="box" placeholder="Código del producto" required><br>
-            <input type="number" name="uni" class="box" placeholder="N° unidades" required><br>
-            <input type="text" id="res" placeholder="Total a pagar" readonly>
+            <input type="number" name="edad" class="box" placeholder="Edad del alumno"required ><br>
+            <select name="sex" class="box">
+                <option value="">Selecione el sexo</option>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+            </select>
+            <select name="carrera" class="box">
+                <option value="">Seleccione la carrera</option>
+                <option value="a">Carrera A</option>
+                <option value="b">Carrera B</option>
+                <option value="c">Carrera C</option>
+            </select>
+            <div class="bloque">
+                <input type="text" id="res" class="block" placeholder="Resultado" readonly>
+                <input type="text" id="prom" class="block" placeholder="Promedio" readonly>
+            </div>
+            <input type="submit" class="btn" id="save" value="Guardar">
             <input type="submit" class="btn" id="calc" value="Calcular">
             <input type="submit" class="btn" id="reiniciar" value="Reiniciar">
         </form>
     </div>
-    <pre></pre>
 </body>
 </html>

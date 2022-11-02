@@ -19,17 +19,13 @@ body {
     border-radius: 1rem;
     background-color: #5c4b7a;
     color: white;
-    width: 19rem;
+    width: 28rem;
 
 }
 
 h1 {
     margin: 0;
     text-align: center;
-}
-
-input, .res {
-    width: -webkit-fill-available;
 }
 
 .box {
@@ -40,20 +36,31 @@ input, .res {
     border-radius: 10px;
     border: none;
     outline: none;
+    width: -webkit-fill-available;
 }
 
-#res {
-    margin: 10px 0 0;
-    padding: 15px;
+.block {
+    /* margin: 10px 0 0; */
+    /* padding: 15px; */
+    /* border-radius: 10px; */
     color: #5af78d;
     background-color: #292b36;
-    border-radius: 10px;
     border: none;
     outline: none;
+    cursor: no-drop;
+    width: -webkit-fill-available;
+}
+
+.bloque {
+    margin: 10px 0 0;
+    padding: 15px;
+    background-color: #292b36;
+    border-radius: 10px;
+    width: -webkit-fill-available;
 }
 
 .btn {
-    width: 8.4rem;
+    width: 48%;
     cursor: pointer;
     margin: 10px 0 0;
     padding: 15px;
@@ -62,20 +69,21 @@ input, .res {
     border-radius: 10px;
     border: none;
     outline: none;
+    transition: .5s;
+}
+
+#calc:hover {
+    background-color: #3eb883;
+}
+
+#reiniciar:hover {
+    background-color: #f75a5a;
+}
+
+#save {
     width: -webkit-fill-available;
-}   
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 5px solid #292b36;
-    text-align: left;
 }
 
-th {
-    color: #5af78d;
-}
-
-tr, th, td {
-    border: 2.5px solid #292b36;
+#save:hover {
+    background-color: #3e58b8;
 }
