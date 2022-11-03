@@ -10,25 +10,10 @@
 </head>
 <body>
     <div class="win">
-        <h1>EJERCICIO 3</h1><br>
-        <form id="myform" action="api.php" method="post">
-            <input type="number" name="edad" class="box" placeholder="Edad del alumno"required ><br>
-            <select name="sex" class="box">
-                <option value="">Selecione el sexo</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-            </select>
-            <select name="carrera" class="box">
-                <option value="">Seleccione la carrera</option>
-                <option value="a">Carrera A</option>
-                <option value="b">Carrera B</option>
-                <option value="c">Carrera C</option>
-            </select>
-            <div class="bloque">
-                <input type="text" id="res" class="block" placeholder="Resultado" readonly>
-                <input type="text" id="prom" class="block" placeholder="Promedio" readonly>
-            </div>
-            <input type="submit" class="btn" id="save" value="Guardar">
+        <h1>EJERCICIO 4</h1><br>
+        <form id="myform" action="api.php">
+            <label>Pago de un producto por 20 meses.</label>
+            <textarea id="res" class="block" placeholder="Resultado" readonly cols="30" rows="10"></textarea>
             <input type="submit" class="btn" id="calc" value="Calcular">
             <input type="submit" class="btn" id="reiniciar" value="Reiniciar">
         </form>

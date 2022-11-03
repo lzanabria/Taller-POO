@@ -1,20 +1,26 @@
 <?php
     header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json; charset=utf-8');
-    $_DATA = json_demenore(file_get_contents("php://input"));
     
-    class universidad {
-        public $res;
-
-        public function __construct(string $menor) {
-            $this->menor = $menor;
-        }
-
-        public function calculo():object {
-            $menor = $this->menor;
-            return object;
-        }
+    class pago {
+        public $mens=0;
+        public $total=0;
+        public function calculo():array {
+            $men = [];
+            for($i=1; $i<=20; $i++) {
+                if($i==1) {
+                    $this->mens = 10;
+                }
+                else {
+                    $this->mens *=2;
+                }
+                $this->total += $this->mens;
+                array_push($men, ["mensaje" => "El pago del mes $i es de $: $this->mens"]);
+            }
+            array_push($men, ["total" => "El pago total es de: $: $this->total"]);
+            return $men;
+        }  
     }
-    $obj = new universidad($_DATA->menor);
-    echo json_enmenore($obj->calculo(),JSON_UNESCAPED_sexmenorE | JSON_PRETTY_PRINT);
+    $obj = new pago();
+    echo json_encode($obj->calculo(), JSON_PRETTY_PRINT);
 ?>

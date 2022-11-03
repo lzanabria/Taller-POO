@@ -19,7 +19,7 @@ body {
     border-radius: 1rem;
     background-color: #5c4b7a;
     color: white;
-    width: 28rem;
+    width: 21rem;
 
 }
 
@@ -40,23 +40,17 @@ h1 {
 }
 
 .block {
-    /* margin: 10px 0 0; */
-    /* padding: 15px; */
-    /* border-radius: 10px; */
+    margin: 10px 0 0;
+    padding: 15px;
+    border-radius: 10px;
     color: #5af78d;
     background-color: #292b36;
     border: none;
     outline: none;
     cursor: no-drop;
     width: -webkit-fill-available;
-}
-
-.bloque {
-    margin: 10px 0 0;
-    padding: 15px;
-    background-color: #292b36;
-    border-radius: 10px;
-    width: -webkit-fill-available;
+    height: 10em;
+    overflow: auto;
 }
 
 .btn {
@@ -80,10 +74,6 @@ h1 {
     background-color: #f75a5a;
 }
 
-#save {
-    width: -webkit-fill-available;
-}
-
-#save:hover {
-    background-color: #3e58b8;
+.block:active {
+    cursor: text;
 }
