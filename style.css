@@ -49,7 +49,7 @@ h1 {
     outline: none;
     cursor: no-drop;
     width: -webkit-fill-available;
-    height: 10em;
+    height: 5em;
     overflow: auto;
 }
 
@@ -76,12 +76,4 @@ h1 {
 
 .block:active {
     cursor: text;
-}
-
-#save {
-    width: -webkit-fill-available;
-}
-
-#save:hover {
-    background-color: #3e58b8;
 }
