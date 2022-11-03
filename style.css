@@ -77,3 +77,11 @@ h1 {
 .block:active {
     cursor: text;
 }
+
+#save {
+    width: -webkit-fill-available;
+}
+
+#save:hover {
+    background-color: #3e58b8;
+}

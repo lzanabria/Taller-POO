@@ -10,9 +10,10 @@
 </head>
 <body>
     <div class="win">
-        <h1>EJERCICIO 4</h1><br>
-        <form id="myform" action="api.php">
-            <label>Pago de un producto por 20 meses.</label>
+        <h1>EJERCICIO 5</h1><br>
+        <form id="myform" action="api.php" method="post">
+            <input type="number" name="venta" class="box" placeholder="Monto de las ventas"><br>
+            <input type="submit" class="btn" id="save" value="Guardar"><br><br>
             <textarea id="res" class="block" placeholder="Resultado" readonly cols="30" rows="10"></textarea>
             <input type="submit" class="btn" id="calc" value="Calcular">
             <input type="submit" class="btn" id="reiniciar" value="Reiniciar">
